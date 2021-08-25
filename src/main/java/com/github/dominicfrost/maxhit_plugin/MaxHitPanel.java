@@ -2,28 +2,14 @@ package com.github.dominicfrost.maxhit_plugin;
 
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.*;
-import net.runelite.api.events.ItemContainerChanged;
 import net.runelite.client.callback.ClientThread;
-import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.game.ItemManager;
-import net.runelite.client.game.ItemMapping;
-import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.PluginPanel;
 import net.runelite.client.ui.components.ComboBoxListRenderer;
 import net.runelite.client.util.Text;
-import net.runelite.http.api.item.ItemStats;
-
-import javax.inject.Inject;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ItemEvent;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Objects;
-
-import static net.runelite.api.Experience.getLevelForXp;
-import static net.runelite.api.Skill.STRENGTH;
 
 @Slf4j
 public class MaxHitPanel extends PluginPanel {

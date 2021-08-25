@@ -59,6 +59,7 @@ public class MaxHitPlugin extends Plugin
 		clientToolbar.removeNavigation(navButton);
 	}
 
+	// listen for updates to equipped gear
 	@Subscribe
 	public void onItemContainerChanged(final ItemContainerChanged event)
 	{
@@ -69,11 +70,13 @@ public class MaxHitPlugin extends Plugin
 		panel.redraw();
 	}
 
+	// listen for updates to the strength level
 	@Subscribe
 	public void onStatChanged(StatChanged statChanged)
 	{
 		if (panel == null) return;
 		if (statChanged.getSkill() != Skill.STRENGTH) return;
+		if (panel.state.getStrengthLevel() == statChanged.getLevel()) return;
 
 		panel.state.setStrengthLevel(statChanged.getLevel());
 		panel.redraw();
