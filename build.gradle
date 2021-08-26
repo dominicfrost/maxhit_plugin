@@ -10,7 +10,8 @@ repositories {
 	mavenCentral()
 }
 
-def runeLiteVersion = '1.7.20.1'
+// current version can be found at https://runelite.net/
+def runeLiteVersion = '1.7.21.1'
 
 dependencies {
 	compileOnly group: 'net.runelite', name:'client', version: runeLiteVersion
@@ -23,7 +24,7 @@ dependencies {
 	testImplementation group: 'net.runelite', name:'jshell', version: runeLiteVersion
 }
 
-group = 'com.example'
+group = 'com.maxhit'
 version = '1.0-SNAPSHOT'
 sourceCompatibility = '1.8'
 
