@@ -8,6 +8,7 @@ Supports identifying bonus damage from the following gear
 - melee void
 - salve, salve(e), salve(ei)
 - slayer helm
+- dragonhunter lance
 
 You can choose which prayer and potions you'll be using.
 
